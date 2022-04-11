@@ -1,4 +1,4 @@
-import { auth, database } from "./backend-folder/config";
+import { auth, database } from "./config";
 import { onAuthStateChanged } from "firebase/auth";
 import { signInAnonymously } from "firebase/auth";
 import { onDisconnect, ref, set } from "firebase/database";
