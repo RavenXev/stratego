@@ -20,7 +20,7 @@ function getAvailableMoves(rank, position) {
 
   // If rank=4 and position = 50
   // Return [40,60,49,51]
-
+  console.log(rank, position)
 }
 
 export default getAvailableMoves;

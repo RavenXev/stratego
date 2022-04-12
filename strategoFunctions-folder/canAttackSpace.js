@@ -15,6 +15,7 @@ function canAttackSpace(attacker, opponent){
 // If attacker is 1 (spy), and opponent is 10, spy wins. return 1.
 // If attacker is 3 (miner), and 99 (bomb) is opponent, miner wins. return 1.
 
+    console.log('hello from the canAttackSpace file!')
 }
 
 export default canAttackSpace;
