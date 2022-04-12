@@ -14,6 +14,7 @@ function canAttackSpace(attacker, opponent){
 // If opponent is null (space is empty), return 1.
 // If attacker is 1 (spy), and opponent is 10, spy wins. return 1.
 // If attacker is 3 (miner), and 99 (bomb) is opponent, miner wins. return 1.
+
 }
 
 export default canAttackSpace;

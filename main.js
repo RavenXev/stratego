@@ -3,7 +3,6 @@ import userIsOnline from "./backend-folder/userIsOnline"
 
 userIsOnline();
 
-console.log('hello!')
 
 document.querySelector("#app").innerHTML = `
   <h1>Stratego!</h1>
