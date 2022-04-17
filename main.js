@@ -9,6 +9,7 @@ console.log('hello!')
 canAttackSpace(3,5);
 getAvailableMoves(3,99);
 
+
 document.querySelector("#app").innerHTML = `
   <h1>Stratego!</h1>
   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
