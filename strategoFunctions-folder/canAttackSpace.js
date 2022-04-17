@@ -22,16 +22,12 @@ if (opponent == null) {
 if (attacker == 1 && opponent == 10) {
     return 1
 }
-if (attacker == 10 && opponent == 1) {
-    return -1
-}
+
 // If attacker is 3 (miner), and 99 (bomb) is opponent, miner wins. return 1.
 if (attacker == 3 && opponent == 99) {
     return 1
 }
-if (attacker == 99 && opponent == 3) {
-    return -1
-}
+
 // If attacker is greater than opponent, opponent wins
 if (attacker > opponent) {
     return 1
@@ -39,8 +35,6 @@ if (attacker > opponent) {
     return -1
 }
 
-
-    console.log('hello from the canAttackSpace file!')
 }
 
 export default canAttackSpace;
