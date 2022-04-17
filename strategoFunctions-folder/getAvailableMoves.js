@@ -105,7 +105,11 @@ function getAvailableMoves(rank, position, board) {
       }
     }
   }
-
+  for (space of current_moves){
+    if (board[space].color == board[position].color){
+      current_moves = our_remove(current_moves, space)
+    }
+  }
   // If rank=4 and position = 50
   // Return [40,60,49,51]
   console.log(rank, position)
