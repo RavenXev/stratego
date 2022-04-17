@@ -1,5 +1,6 @@
 /**
- * Returns 1,0,or -1 depending on the outcome of an attempted attack.
+ * Returns 2,1,0,or -1 depending on the outcome of an attempted attack.
+ * 2 if the opponent is the flag, and the game is over
  * 1 if attacker wins
  * 0 if tie.
  * -1 if opponent wins.
@@ -14,6 +15,12 @@ if (attacker == opponent) {
     return 0
 }
 // Special cases:
+
+//game is over
+if (opponent == 0){
+    return 2
+}
+
 // If opponent is null (space is empty), return 1.
 if (opponent == null) {
     return 1
