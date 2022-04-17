@@ -2,6 +2,7 @@
  * Returns array of all locations the piece can move to.
  * @param {number} rank rank of the piece.
  * @param {number} position location on the board.
+ * @param {Array} board array of pieces on board
  */
 function getAvailableMoves(rank, position, board) {
   function our_remove(current_moves,remove){
@@ -84,7 +85,7 @@ function getAvailableMoves(rank, position, board) {
     close_right = checkright(position, board)
     close_up = checkup(position, board)
     index2 = close_down
-    while (index2 < close_up){ //vertical spaces
+    while (index2 <= close_up){ //vertical spaces
       current_moves.push(index2)
       index2 += 10
     }
