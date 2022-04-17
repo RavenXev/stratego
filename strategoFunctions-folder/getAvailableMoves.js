@@ -3,7 +3,7 @@
  * @param {number} rank rank of the piece.
  * @param {number} position location on the board.
  */
-function getAvailableMoves(rank, position) {
+function getAvailableMoves(rank, position, board) {
   function our_remove(current_moves,remove){
     new_moves = []
     for (move of current_moves){
