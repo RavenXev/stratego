@@ -18,20 +18,22 @@ function getAvailableMoves(rank, position) {
     close_right = position-position%10+9
     close_down = position%10
     close_up = position%10+90
-    for(index = position; position < close_up; i+10){
+    for(index = close_up; index > position; index-10){
       if (board(index) != null){
         close_up = index
       }
-    for(index = position; position > close_down; i-10){
+    }
+    for(index = close_down; index < position; index+10){
       if (board(index) != null){
-        close_down = index 
-             
+        close_down = index        
       }
-    for(index = position; position < closeright; i++){}
+    }
+    for(index = close_right; index > position; index--){
       if (board(index) != null){
         close_right = index
-        }          
-    for(index = position; position < close_down; i--){
+      }          
+    }
+    for(index = close_left; index < position; index++){
       if (board(index) != null){
         close_left = index
       }                   
@@ -75,27 +77,12 @@ function getAvailableMoves(rank, position) {
   // Return [0,10,20,30,40,50,60,70,80,90,1,2,3,4,5,6,7,8,9]
   if (rank == 2){
     current_moves = []
-    close_left = position-position%10
-    close_right = position-position%10+9
-    close_down = position%10
-    close_up = position%10+90
-    for (index = 0; index < 10; index++){ //vertical spaces
-      move = index*10+position%10
-      if (move < position){
-        close_down = check2(move, position, close_down)
-      }
-      else{
-        close_up = check2(move, position, close_up)
-      }
+    close_left, close_down, close_right, close_left = checkclosest(position, board)
+    for (index = close_down; index <= close_up; index+10){ //vertical spaces
+      current_moves.push(index)
     }
-    for (index = 0; index < 10; index++){  //horizontal spaces
-      move = index + position-position%10
-      if (move < position){
-        close_left = check2(move, position, close_left)
-      }
-      else{
-        close_right = check2(move, position, close_right)
-      }
+    for (index = close_left; index <= close_right; index++){  //horizontal spaces
+      current_moves.push(index)
     }
   }
   // If rank=4 and position = 50
