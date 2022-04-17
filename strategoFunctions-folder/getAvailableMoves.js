@@ -13,6 +13,31 @@ function getAvailableMoves(rank, position) {
     }
     return new_moves
   }
+  function checkclosest(position, board){
+    close_left = position-position%10
+    close_right = position-position%10+9
+    close_down = position%10
+    close_up = position%10+90
+    for(index = position; position < close_up; i+10){
+      if (board(index) != null){
+        close_up = index
+      }
+    for(index = position; position > close_down; i-10){
+      if (board(index) != null){
+        close_down = index 
+             
+      }
+    for(index = position; position < closeright; i++){}
+      if (board(index) != null){
+        close_right = index
+        }          
+    for(index = position; position < close_down; i--){
+      if (board(index) != null){
+        close_left = index
+      }                   
+    }
+    return close_left, close_down, close_right, close_left
+  }
   current_moves = [position+1,position-1,position+10,position-10]
   // 42,43,52,53,46,47,56,57 are all banned spaces. The return array
   // should never contain any of these locations.
@@ -49,31 +74,29 @@ function getAvailableMoves(rank, position) {
   // If rank=2 and position=0
   // Return [0,10,20,30,40,50,60,70,80,90,1,2,3,4,5,6,7,8,9]
   if (rank == 2){
-    for (index = 0; index < 10; index++){ //vertical spaces 
+    current_moves = []
+    close_left = position-position%10
+    close_right = position-position%10+9
+    close_down = position%10
+    close_up = position%10+90
+    for (index = 0; index < 10; index++){ //vertical spaces
       move = index*10+position%10
-      add_move = true
-      for (j = 0; j < current_moves.length; j++){
-        if (move == current_moves[j]){
-          add_move = false
-        }
+      if (move < position){
+        close_down = check2(move, position, close_down)
       }
-      if (add_move){
-        current_moves.push(move)
+      else{
+        close_up = check2(move, position, close_up)
       }
     }
     for (index = 0; index < 10; index++){  //horizontal spaces
       move = index + position-position%10
-      add_move = true
-      for (j = 0; j < current_moves.length; j++){
-        if (move == current_moves[j]){
-          add_move = false
-        }
+      if (move < position){
+        close_left = check2(move, position, close_left)
       }
-      if (add_move){
-        current_moves.push(move)
+      else{
+        close_right = check2(move, position, close_right)
       }
     }
-    current_moves = our_remove(current_moves, position)
   }
   // If rank=4 and position = 50
   // Return [40,60,49,51]
