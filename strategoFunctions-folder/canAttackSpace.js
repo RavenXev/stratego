@@ -5,43 +5,42 @@
  * 0 if tie.
  * -1 if opponent wins.
  * Null is an empty space. 1-10 are regular pieces. Flag is 0. Bomb is 99.
- * 
- * 
- * @param {number} attacker rank of the attacking piece.
- * @param {number or null} opponent rank of the piece being attacked.
+ *
+ *
+ * @param {object} attacker object/dictionary of the attacking piece.
+ * @param {object or null} opponent object/dictionary representing piece being attacked.
  */
-function canAttackSpace(attacker, opponent){
-if (attacker == opponent) {
-    return 0
-}
-// Special cases:
+function canAttackSpace(attacker, opponent) {
+  // If opponent is null (space is empty), return 1.
+  if (opponent == null) {
+    return 1;
+  }
 
-//game is over
-if (opponent == 0){
-    return 2
-}
+  if (attacker.rank == opponent.rank) {
+    return 0;
+  }
 
-// If opponent is null (space is empty), return 1.
-if (opponent == null) {
-    return 1
-}
-// If attacker is 1 (spy), and opponent is 10, spy wins. return 1.
-if (attacker == 1 && opponent == 10) {
-    return 1
-}
+  //game is over
+  if (opponent.rank == 0) {
+    return 2;
+  }
 
-// If attacker is 3 (miner), and 99 (bomb) is opponent, miner wins. return 1.
-if (attacker == 3 && opponent == 99) {
-    return 1
-}
+  // If attacker is 1 (spy), and opponent is 10, spy wins. return 1.
+  if (attacker.rank == 1 && opponent.rank == 10) {
+    return 1;
+  }
 
-// If attacker is greater than opponent, opponent wins
-if (attacker > opponent) {
-    return 1
-}   else {
-    return -1
-}
+  // If attacker is 3 (miner), and 99 (bomb) is opponent, miner wins. return 1.
+  if (attacker.rank == 3 && opponent.rank == 99) {
+    return 1;
+  }
 
+  // If attacker is greater than opponent, opponent wins
+  if (attacker.rank > opponent.rank) {
+    return 1;
+  } else {
+    return -1;
+  }
 }
 
 export default canAttackSpace;

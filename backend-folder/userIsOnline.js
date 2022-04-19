@@ -2,6 +2,7 @@ import { auth, database } from "./config";
 import { onAuthStateChanged } from "firebase/auth";
 import { signInAnonymously } from "firebase/auth";
 import { onDisconnect, ref, set, onValue, push, onChildAdded} from "firebase/database";
+
 function userIsOnline(){
 
 let userId;
@@ -19,6 +20,7 @@ function initGame(){
   onValue(allUsersRef, (snapshot)=>{
     const data =  snapshot.val();
     let userIds = Object.keys(data)
+
   })
 
   onChildAdded(allGamesRef, (snapshot)=>{

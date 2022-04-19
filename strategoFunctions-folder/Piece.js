@@ -1,5 +1,10 @@
 class Piece {
-  constructor(rank, position, color) {
+  
+    rank;
+    position;
+    color;
+
+    constructor(rank, position, color) {
     this.rank = rank;
     this.position = position;
     this.color = color;

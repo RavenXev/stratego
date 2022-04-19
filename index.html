@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+
+      <router-link to="/">Go to Home</router-link>
+      <router-link to="/about">Go to About</router-link>
+      <router-view></router-view>
+
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
