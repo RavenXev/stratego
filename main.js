@@ -2,16 +2,12 @@ import "./style.css";
 import userIsOnline from "./backend-folder/userIsOnline"
 import Piece from "./strategoFunctions-folder/Piece"
 import printGameState from "./strategoFunctions-folder/printGameState"
+import dummyArray from "./strategoFunctions-folder/dummyArray.json"
 userIsOnline();
 
-let gameStateDummyArray = [];
 
-for(let i=0; i<100; i++){
-  let newPiece = new Piece(3,i,"red")
-  gameStateDummyArray.push(newPiece)
-}
-console.log(printGameState(gameStateDummyArray))
-console.log(gameStateDummyArray)
+
+console.log(printGameState(dummyArray))
 
 // 1. Define route components.
 // These can be imported from other files
