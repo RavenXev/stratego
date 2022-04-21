@@ -17,7 +17,6 @@ function printGameState(gameState){
         finalPrint += addedElement.toString().padEnd(4, ' ')
         if(i%10 == 9) finalPrint += "\n\n"
     }
-
     console.log(finalPrint)
 }
 
