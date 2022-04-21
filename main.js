@@ -1,40 +1,24 @@
 import "./style.css";
-import userIsOnline from "./backend-folder/userIsOnline"
-import Piece from "./strategoFunctions-folder/Piece"
 import printGameState from "./strategoFunctions-folder/printGameState"
 import dummyArray from "./strategoFunctions-folder/dummyArray.json"
-userIsOnline();
 
+printGameState(dummyArray)
 
+const app = document.getElementById('app')
 
-console.log(printGameState(dummyArray))
-
-// 1. Define route components.
-// These can be imported from other files
-const Home = { template: '<div>Home</div>' }
-const About = { template: '<div>About</div>' }
-
-// 2. Define some routes
-// Each route should map to a component.
-// We'll talk about nested routes later.
-const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
+let sampleArray = [
+  {rank:9, position:0, color: "red"}, 
+  {rank:0, position:0, color: "blue"},
+  {rank:2, position:0, color: "red"},
+  {rank:4, position:0, color: "blue"}
 ]
 
-// 3. Create the router instance and pass the `routes` option
-// You can pass in additional options here, but let's
-// keep it simple for now.
-const router = VueRouter.createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
-  history: VueRouter.createWebHashHistory(),
-  routes, // short for `routes: routes`
+sampleArray.forEach((piece) => {
+  //forEach runs through an array and for each element runs a function
+  const newDiv = document.createElement('div')
+  newDiv.classList.add('newPieceClass')
+  newDiv.style.backgroundColor = piece.color
+  newDiv.textContent= piece.rank
+  app.appendChild(newDiv)
 })
 
-// 5. Create and mount the root instance.
-const app = Vue.createApp({})
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
-app.use(router)
-
-app.mount('#app')

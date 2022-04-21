@@ -3,13 +3,17 @@ import canAttackSpace from "./canAttackSpace";
 
 
 function runGame(isGameOver, whoseTurn, gameState) {
-  let whoseTurn = whoseTurn;
+  let whoseTurn = whoseTurn; // this string will either be "red" or "blue"
+  
   chosenPiece = gameState[0];
-  // assume chosen position is 0, you can change this to test other things.
-  // returns an object with three keys
+  // assume chosen position is 0
+  // also assume chosenPiece.color is the correct color for any given turn
+  // chosenPiece an object with three keys
   // {rank: , position: , color: }
 
   while (!isGameOver) {
+
+
     getAvailableMoves(chosenPiece.rank, chosenPiece.position, gameState);
     //returns an array of all possible moves
 
@@ -36,7 +40,12 @@ function runGame(isGameOver, whoseTurn, gameState) {
     }
 
     //change the turn
-
+    if(whoseTurn = "red"){
+      whoseTurn = "blue"
+    }
+    else if(whoseTurn="blue"){
+      whoseTurn = "red"
+    }
 
   } // end of while loop
 }

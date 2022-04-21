@@ -1,482 +1,422 @@
 [
-    {
-        "rank": 99,
-        "position": 0,
-        "color": "red"
-    },
-    {
-        "rank": 0,
-        "position": 1,
-        "color": "red"
-    },
-    {
-        "rank": 99,
-        "position": 2,
-        "color": "red"
-    },
-    {
-        "rank": 5,
-        "position": 3,
-        "color": "red"
-    },
-    {
-        "rank": 99,
-        "position": 4,
-        "color": "red"
-    },
-    {
-        "rank": 5,
-        "position": 5,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 6,
-        "color": "red"
-    },
-    {
-        "rank": 6,
-        "position": 7,
-        "color": "red"
-    },
-    {
-        "rank": 6,
-        "position": 8,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 9,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 10,
-        "color": "red"
-    },
-    {
-        "rank": 8,
-        "position": 11,
-        "color": "red"
-    },
-    {
-        "rank": 7,
-        "position": 12,
-        "color": "red"
-    },
-    {
-        "rank": 99,
-        "position": 13,
-        "color": "red"
-    },
-    {
-        "rank": 4,
-        "position": 14,
-        "color": "red"
-    },
-    {
-        "rank": 8,
-        "position": 15,
-        "color": "red"
-    },
-    {
-        "rank": 6,
-        "position": 16,
-        "color": "red"
-    },
-    {
-        "rank": 4,
-        "position": 17,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 18,
-        "color": "red"
-    },
-    {
-        "rank": 8,
-        "position": 19,
-        "color": "red"
-    },
-    {
-        "rank": 7,
-        "position": 20,
-        "color": "red"
-    },
-    {
-        "rank": 6,
-        "position": 21,
-        "color": "red"
-    },
-    {
-        "rank": 99,
-        "position": 22,
-        "color": "red"
-    },
-    {
-        "rank": 7,
-        "position": 23,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 24,
-        "color": "red"
-    },
-    {
-        "rank": 1,
-        "position": 25,
-        "color": "red"
-    },
-    {
-        "rank": 4,
-        "position": 26,
-        "color": "red"
-    },
-    {
-        "rank": 5,
-        "position": 27,
-        "color": "red"
-    },
-    {
-        "rank": 8,
-        "position": 28,
-        "color": "red"
-    },
-    {
-        "rank": 5,
-        "position": 29,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 30,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 31,
-        "color": "red"
-    },
-    {
-        "rank": 7,
-        "position": 32,
-        "color": "red"
-    },
-    {
-        "rank": 99,
-        "position": 33,
-        "color": "red"
-    },
-    {
-        "rank": 5,
-        "position": 34,
-        "color": "red"
-    },
-    {
-        "rank": 2,
-        "position": 35,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 36,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 37,
-        "color": "red"
-    },
-    {
-        "rank": 1,
-        "position": 38,
-        "color": "red"
-    },
-    {
-        "rank": 8,
-        "position": 39,
-        "color": "red"
-    },
-    {
-        "rank": 9,
-        "position": 40,
-        "color": "red"
-    },
-    {
-        "rank": 99,
-        "position": 41,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 42,
-        "color": "red"
-    },
-    "lake",
-   "lake",
-    null,
-    null,
-    "lake",
-    {
-        "rank": 3,
-        "position": 48,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 49,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 50,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 51,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 52,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 53,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 54,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 55,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 56,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 57,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 58,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 59,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 60,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 61,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 62,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 63,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 64,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 65,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 66,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 67,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 68,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 69,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 70,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 71,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 72,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 73,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 74,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 75,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 76,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 77,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 78,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 79,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 80,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 81,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 82,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 83,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 84,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 85,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 86,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 87,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 88,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 89,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 90,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 91,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 92,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 93,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 94,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 95,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 96,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 97,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 98,
-        "color": "red"
-    },
-    {
-        "rank": 3,
-        "position": 99,
-        "color": "red"
-    }
+  {
+    "rank": 99,
+    "position": 0,
+    "color": "red"
+  },
+  {
+    "rank": 0,
+    "position": 1,
+    "color": "red"
+  },
+  {
+    "rank": 99,
+    "position": 2,
+    "color": "red"
+  },
+  {
+    "rank": 5,
+    "position": 3,
+    "color": "red"
+  },
+  {
+    "rank": 99,
+    "position": 4,
+    "color": "red"
+  },
+  {
+    "rank": 5,
+    "position": 5,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 6,
+    "color": "red"
+  },
+  {
+    "rank": 6,
+    "position": 7,
+    "color": "red"
+  },
+  {
+    "rank": 6,
+    "position": 8,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 9,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 10,
+    "color": "red"
+  },
+  {
+    "rank": 8,
+    "position": 11,
+    "color": "red"
+  },
+  {
+    "rank": 7,
+    "position": 12,
+    "color": "red"
+  },
+  {
+    "rank": 99,
+    "position": 13,
+    "color": "red"
+  },
+  {
+    "rank": 4,
+    "position": 14,
+    "color": "red"
+  },
+  {
+    "rank": 8,
+    "position": 15,
+    "color": "red"
+  },
+  {
+    "rank": 6,
+    "position": 16,
+    "color": "red"
+  },
+  {
+    "rank": 4,
+    "position": 17,
+    "color": "red"
+  },
+  {
+    "rank": 3,
+    "position": 18,
+    "color": "red"
+  },
+  {
+    "rank": 8,
+    "position": 19,
+    "color": "red"
+  },
+  {
+    "rank": 7,
+    "position": 20,
+    "color": "red"
+  },
+  {
+    "rank": 6,
+    "position": 21,
+    "color": "red"
+  },
+  {
+    "rank": 99,
+    "position": 22,
+    "color": "red"
+  },
+  {
+    "rank": 7,
+    "position": 23,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 24,
+    "color": "red"
+  },
+  {
+    "rank": 1,
+    "position": 25,
+    "color": "red"
+  },
+  {
+    "rank": 4,
+    "position": 26,
+    "color": "red"
+  },
+  {
+    "rank": 5,
+    "position": 27,
+    "color": "red"
+  },
+  {
+    "rank": 8,
+    "position": 28,
+    "color": "red"
+  },
+  {
+    "rank": 5,
+    "position": 29,
+    "color": "red"
+  },
+  {
+    "rank": 3,
+    "position": 30,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 31,
+    "color": "red"
+  },
+  {
+    "rank": 7,
+    "position": 32,
+    "color": "red"
+  },
+  {
+    "rank": 99,
+    "position": 33,
+    "color": "red"
+  },
+  {
+    "rank": 5,
+    "position": 34,
+    "color": "red"
+  },
+  {
+    "rank": 2,
+    "position": 35,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 36,
+    "color": "red"
+  },
+  {
+    "rank": 9,
+    "position": 37,
+    "color": "red"
+  },
+  {
+    "rank": 1,
+    "position": 38,
+    "color": "red"
+  },
+  {
+    "rank": 8,
+    "position": 39,
+    "color": "red"
+  },
+  null,
+  null,
+  "lake",
+  "lake",
+  null,
+  null,
+  "lake",
+  "lake",
+  null,
+  null,
+  null,
+  null,
+  "lake",
+  "lake",
+  null,
+  null,
+  "lake",
+  "lake",
+  null,
+  null,
+  {
+    "rank": 7,
+    "position": 60,
+    "color": "blue"
+  },
+  {
+    "rank": 99,
+    "position": 61,
+    "color": "blue"
+  },
+  {
+    "rank": 5,
+    "position": 62,
+    "color": "blue"
+  },
+  {
+    "rank": 2,
+    "position": 63,
+    "color": "blue"
+  },
+  {
+    "rank": 9,
+    "position": 64,
+    "color": "blue"
+  },
+  {
+    "rank": 9,
+    "position": 65,
+    "color": "blue"
+  },
+  {
+    "rank": 10,
+    "position": 66,
+    "color": "blue"
+  },
+  {
+    "rank": 2,
+    "position": 67,
+    "color": "blue"
+  },
+  {
+    "rank": 99,
+    "position": 68,
+    "color": "blue"
+  },
+  {
+    "rank": 99,
+    "position": 69,
+    "color": "blue"
+  },
+  {
+    "rank": 3,
+    "position": 70,
+    "color": "blue"
+  },
+  {
+    "rank": 2,
+    "position": 71,
+    "color": "blue"
+  },
+  {
+    "rank": 1,
+    "position": 72,
+    "color": "blue"
+  },
+  {
+    "rank": 4,
+    "position": 73,
+    "color": "blue"
+  },
+  {
+    "rank": 5,
+    "position": 74,
+    "color": "blue"
+  },
+  {
+    "rank": 8,
+    "position": 75,
+    "color": "blue"
+  },
+  {
+    "rank": 5,
+    "position": 76,
+    "color": "blue"
+  },
+  {
+    "rank": 3,
+    "position": 77,
+    "color": "blue"
+  },
+  {
+    "rank": 9,
+    "position": 78,
+    "color": "blue"
+  },
+  {
+    "rank": 7,
+    "position": 79,
+    "color": "blue"
+  },
+  {
+    "rank": 99,
+    "position": 80,
+    "color": "blue"
+  },
+  {
+    "rank": 4,
+    "position": 81,
+    "color": "blue"
+  },
+  {
+    "rank": 8,
+    "position": 82,
+    "color": "blue"
+  },
+  {
+    "rank": 6,
+    "position": 83,
+    "color": "blue"
+  },
+  {
+    "rank": 4,
+    "position": 84,
+    "color": "blue"
+  },
+  {
+    "rank": 3,
+    "position": 85,
+    "color": "blue"
+  },
+  {
+    "rank": 8,
+    "position": 86,
+    "color": "blue"
+  },
+  {
+    "rank": 7,
+    "position": 87,
+    "color": "blue"
+  },
+  {
+    "rank": 6,
+    "position": 88,
+    "color": "blue"
+  },
+  {
+    "rank": 99,
+    "position": 89,
+    "color": "blue"
+  },
+  {
+    "rank": 7,
+    "position": 90,
+    "color": "blue"
+  },
+  {
+    "rank": 4,
+    "position": 91,
+    "color": "blue"
+  },
+  {
+    "rank": 8,
+    "position": 92,
+    "color": "blue"
+  },
+  {
+    "rank": 6,
+    "position": 93,
+    "color": "blue"
+  },
+  {
+    "rank": 4,
+    "position": 94,
+    "color": "blue"
+  },
+  {
+    "rank": 3,
+    "position": 95,
+    "color": "blue"
+  },
+  {
+    "rank": 0,
+    "position": 96,
+    "color": "blue"
+  },
+  {
+    "rank": 3,
+    "position": 97,
+    "color": "blue"
+  },
+  {
+    "rank": 8,
+    "position": 98,
+    "color": "blue"
+  },
+  {
+    "rank": 7,
+    "position": 99,
+    "color": "blue"
+  }
 ]
