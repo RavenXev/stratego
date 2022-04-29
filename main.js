@@ -12,10 +12,16 @@ dummyArray.forEach((piece) => {
 
   const newDiv = document.createElement("div"); // use Javascript to make a new div
   newDiv.classList.add("grid-item"); // add a class to it for CSS styling purposes. You can select all of these with ".newPieceClass"
-
+  newDiv.addEventListener('mouseover', ()=>{
+    newDiv.style.opacity = "50%";
+  })
+  newDiv.addEventListener('mouseleave', ()=>{
+    newDiv.style.opacity = "100%";
+  })
   if (piece != null && piece != "lake") {
     newDiv.style.backgroundColor = piece.color;
     newDiv.textContent = piece.rank;
+    
   }
   if (piece == null) {
     newDiv.textContent = "null";
