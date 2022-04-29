@@ -20,3 +20,9 @@
   font-size: large;
   text-align: center;
 }
+
+#app-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
