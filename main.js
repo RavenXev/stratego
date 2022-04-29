@@ -1,6 +1,7 @@
 import "./style.css";
 import printGameState from "./strategoFunctions-folder/printGameState";
 import dummyArray from "./strategoFunctions-folder/dummyArray.json";
+import userIsOnline from "./backend-folder/userIsOnline"
 
 printGameState(dummyArray);
 
@@ -10,7 +11,7 @@ dummyArray.forEach((piece) => {
   //forEach runs through an array and for each element runs a function
 
   const newDiv = document.createElement("div"); // use Javascript to make a new div
-  newDiv.classList.add("newPieceClass"); // add a class to it for CSS styling purposes. You can select all of these with ".newPieceClass"
+  newDiv.classList.add("grid-item"); // add a class to it for CSS styling purposes. You can select all of these with ".newPieceClass"
 
   if (piece != null && piece != "lake") {
     newDiv.style.backgroundColor = piece.color;
@@ -26,3 +27,6 @@ dummyArray.forEach((piece) => {
 
   app.appendChild(newDiv);
 });
+
+
+userIsOnline();
