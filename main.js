@@ -1,38 +1,70 @@
 import "./style.css";
-import printGameState from "./strategoFunctions-folder/printGameState";
-import dummyArray from "./strategoFunctions-folder/dummyArray.json";
-import userIsOnline from "./backend-folder/userIsOnline"
+import userIsOnline from "./backend-folder/userIsOnline";
+import Game from "./strategoFunctions-folder/GameObject";
+import GameSquare from "./strategoFunctions-folder/GameSquare";
+import getAvailableMoves from "./strategoFunctions-folder/getAvailableMoves";
 
-printGameState(dummyArray);
+let dummyGame = [];
+let ranks = [99, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let i = 0; i < 100; i++) {
+  const newSquare = new GameSquare();
+  newSquare.position = i;
+  if (i <= 39) {
+    newSquare.rank = ranks[Math.floor(Math.random() * ranks.length)];
+    newSquare.color = "blue";
+  } else if ([42, 43, 52, 53, 46, 47, 56, 57].includes(i)) {
+    newSquare.rank = -1;
+    newSquare.color = null;
+  } else if (i <= 59) {
+    newSquare.rank = null;
+    newSquare.color = null;
+  } else {
+    newSquare.rank = ranks[Math.floor(Math.random() * ranks.length)];
+    newSquare.color = "red";
+  }
+
+  dummyGame.push(newSquare);
+}
 
 const app = document.getElementById("app");
 
-dummyArray.forEach((piece) => {
-  //forEach runs through an array and for each element runs a function
+let newGame = new Game(false, 'red', dummyGame)
 
-  const newDiv = document.createElement("div"); // use Javascript to make a new div
-  newDiv.classList.add("grid-item"); // add a class to it for CSS styling purposes. You can select all of these with ".newPieceClass"
-  newDiv.addEventListener('mouseover', ()=>{
-    newDiv.style.opacity = "50%";
+
+newGame.gameState.forEach((gameSquare) => {
+  const square = document.createElement("div");
+  square.classList.add("grid-item");
+  square.setAttribute('rank',String(gameSquare.rank))
+  square.setAttribute('position', gameSquare.position)
+  square.setAttribute('color', String(gameSquare.color))
+  square.addEventListener('mouseover', ()=>{
+    square.style.opacity = 0.2
   })
-  newDiv.addEventListener('mouseleave', ()=>{
-    newDiv.style.opacity = "100%";
+
+  square.addEventListener('mouseleave', ()=>{
+    square.style.opacity = 1
   })
-  if (piece != null && piece != "lake") {
-    newDiv.style.backgroundColor = piece.color;
-    newDiv.textContent = piece.rank;
-    
-  }
-  if (piece == null) {
-    newDiv.textContent = "null";
-  }
-  if (piece == "lake") {
-    newDiv.textContent = "lake";
-    newDiv.style.backgroundColor = "#ADD8E6"; // light blue for lakes
+
+  square.addEventListener('click', (event)=>{
+    const thisSquare = event.target
+    thisSquare.classList.toggle('active')
+    let rank =thisSquare.getAttribute('rank') 
+    let position = thisSquare.getAttribute('position') ;
+    let color = thisSquare.getAttribute('color');
+    console.log(rank, position, color); 
+    console.log(getAvailableMoves(rank, position, color, newGame))
+  })
+
+
+  if (gameSquare.color != null) {
+    square.style.backgroundColor = gameSquare.color;
   }
 
-  app.appendChild(newDiv);
+  square.textContent = String(gameSquare.rank);
+  app.appendChild(square);
 });
+
+
 
 
 userIsOnline();
