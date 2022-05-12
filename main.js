@@ -28,43 +28,64 @@ for (let i = 0; i < 100; i++) {
 
 const app = document.getElementById("app");
 
-let newGame = new Game(false, 'red', dummyGame)
-
+let newGame = new Game(false, "red", dummyGame);
 
 newGame.gameState.forEach((gameSquare) => {
   const square = document.createElement("div");
   square.classList.add("grid-item");
-  square.setAttribute('rank',String(gameSquare.rank))
-  square.setAttribute('position', gameSquare.position)
-  square.setAttribute('color', String(gameSquare.color))
-  square.addEventListener('mouseover', ()=>{
-    square.style.opacity = 0.2
-  })
+  square.setAttribute("rank", String(gameSquare.rank));
+  square.setAttribute("position", gameSquare.position);
+  square.setAttribute("color", String(gameSquare.color));
 
-  square.addEventListener('mouseleave', ()=>{
-    square.style.opacity = 1
-  })
-
-  square.addEventListener('click', (event)=>{
-    const thisSquare = event.target
-    thisSquare.classList.toggle('active')
-    let rank =thisSquare.getAttribute('rank') 
-    let position = thisSquare.getAttribute('position') ;
-    let color = thisSquare.getAttribute('color');
-    console.log(rank, position, color); 
-    console.log(getAvailableMoves(rank, position, color, newGame))
-  })
-
-
+  //set initial graphics
   if (gameSquare.color != null) {
     square.style.backgroundColor = gameSquare.color;
   }
 
   square.textContent = String(gameSquare.rank);
+
+  //hover effects
+  square.addEventListener("mouseover", () => {
+    square.style.opacity = 0.2;
+  });
+
+  square.addEventListener("mouseleave", () => {
+    square.style.opacity = 1;
+  });
+
+  square.addEventListener("click", (event) => {
+    const thisSquare = event.target;
+
+    // reset highlighted squares
+    document.querySelectorAll(".highlighted").forEach((square) => {
+      square.classList.remove("highlighted");
+      if (square.getAttribute("color") == "null") {
+        square.style.backgroundColor = "white";
+      } else {
+        square.style.backgroundColor = square.getAttribute("color");
+      }
+    });
+
+    // set attributes
+    let rank = thisSquare.getAttribute("rank");
+    let position = thisSquare.getAttribute("position");
+    let color = thisSquare.getAttribute("color");
+    const availableMoves = getAvailableMoves(rank, position, color, newGame);
+
+    //highlight available squares
+    let availableSquares = [];
+    availableMoves.forEach((move) => {
+      const highlightedSquare = document.querySelector(`[position="${move}"]`);
+      availableSquares.push(highlightedSquare);
+      highlightedSquare.classList.add("highlighted");
+    });
+
+    document.querySelectorAll(".highlighted").forEach((square) => {
+      square.style.backgroundColor = "yellow";
+    });
+  }); // click event listener
+
   app.appendChild(square);
 });
-
-
-
 
 userIsOnline();

@@ -25,10 +25,7 @@ function getAvailableMoves(rank, position, color, Game) {
   // AKA if the piece is on 0,10,20,30,40,50,60,70,80,90
   // or 9,19,29,39,49,59,69,79,89,99.
   // for instance, a piece on 9 cannot move to 10 and vice versa.
-  else if (rank === 2) {
-    
-
-  } else {
+  else {
     // everything else but a 2
     let validMoves = [position + 1, position - 1, position + 10, position - 10];
     return validMoves.filter(
